@@ -9,8 +9,8 @@ import 'package:flutter_starter_kit/utils/theme/widget_theme/outlined_button_the
 import 'package:flutter_starter_kit/utils/theme/widget_theme/text_field_theme.dart';
 import 'package:flutter_starter_kit/utils/theme/widget_theme/text_theme.dart';
 
-class TAppTheme {
-  TAppTheme._();
+class AppAppTheme {
+  AppAppTheme._();
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,

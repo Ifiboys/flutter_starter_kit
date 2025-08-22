@@ -1,16 +1,47 @@
-# flutter_starter_kit
+## Structure du dossier `lib/` et explications
 
-A new Flutter project.
+- **lib/main.dart**  
+  Point d’entrée de l’application Flutter. Lance le widget racine [`App`](lib/app.dart).
 
-## Getting Started
+- **lib/app.dart**  
+  Définit le widget principal de l’application, configure le thème, la navigation, etc.
 
-This project is a starting point for a Flutter application.
+### Dossier `utils/`
 
-A few resources to get you started if this is your first Flutter project:
+- **utils/constants/**  
+  Contient toutes les constantes globales de l’application :
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+  - [`colors.dart`](lib/utils/constants/colors.dart) : Palette de couleurs utilisée dans l’app, pour les thèmes clair/sombre, boutons, textes, etc.
+  - [`text_strings.dart`](lib/utils/constants/text_strings.dart) : Textes statiques et labels utilisés dans l’interface.
+  - [`image_strings.dart`](lib/utils/constants/image_strings.dart) : Chemins des images et logos de l’application.
+  - [`sizes.dart`](lib/utils/constants/sizes.dart) : Définit les tailles (paddings, marges, icônes, polices) de façon responsive.
+  - [`enums.dart`](lib/utils/constants/enums.dart) : Déclaration des énumérations utilisées dans l’app.
+  - [`api_constants.dart`](lib/utils/constants/api_constants.dart) : URLs et clés d’API pour les appels réseau.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **utils/device/device_utility.dart**  
+  Fonctions utilitaires liées à l’appareil : gestion du clavier, orientation, statut de la barre, détection de plateforme, connexion internet, etc.
+
+- **utils/formatters/formatter.dart**  
+  Fonctions pour formater les dates, montants, numéros de téléphone, etc.
+
+- **utils/helpers/helper_functions.dart**  
+  Fonctions d’aide génériques : gestion des couleurs, détection du mode sombre, manipulation de texte, gestion de la taille d’écran, etc.
+
+- **utils/http/http_client.dart**  
+  Classe utilitaire pour effectuer des requêtes HTTP (GET, POST, PUT, DELETE) avec gestion de la réponse.
+
+- **utils/local_storage/storage_utility.dart**  
+  Classe utilitaire pour la gestion du stockage local (sauvegarde, lecture, suppression de données) via GetStorage.
+
+- **utils/theme/widget_theme/**  
+  Thèmes personnalisés pour les widgets :
+
+  - [`bottom_sheet_theme.dart`](lib/utils/theme/widget_theme/bottom_sheet_theme.dart) : Thème pour les BottomSheets (clair/sombre).
+  - (D’autres fichiers similaires peuvent exister pour d’autres widgets.)
+
+- **utils/validators/validation.dart**  
+  Fonctions de validation pour les formulaires : email, mot de passe, numéro de téléphone, champs obligatoires, etc.
+
+---
+
+\_N’hésite pas à compléter cette documentation

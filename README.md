@@ -69,8 +69,6 @@
 - **bottom_sheet_theme.dart**  
   Définit le thème personnalisé pour les BottomSheets (couleurs, formes, marges, etc.) en mode clair et sombre.
 
-  _(Ajouter ici d’autres fichiers de thème si présents, par exemple : button_theme.dart, input_theme.dart, etc.)_
-
 #### Sous-dossier `validators/`
 
 - **validation.dart**  
